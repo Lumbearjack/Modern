@@ -1,0 +1,82 @@
+#purchase{
+	padding:10rem 0 7rem 0;
+	.priceBlock{
+		display:flex;
+		justify-content: space-between;
+		margin-top:1.9rem;
+		.priceBlock__item{
+			box-sizing:border-box;
+			padding:3.6rem 2.3rem 3.2rem 2.0rem;
+			background:#fff;
+			flex-basis:31%;
+			display:flex;
+			flex-direction:column;
+			box-shadow: 2.5px 0.25rem 2.4rem 0px rgba(135, 153, 163, 0.2);
+			transition: all 0.5s ease;
+			&:hover{
+				box-shadow: 12.5px 21.651px 80px 0px rgba(135, 153, 163, 0.6);
+				transform: translateY(-1rem);
+			}
+			& > *{
+				margin:auto;
+			}
+			h5{
+				font-size:1.1rem;
+				letter-spacing: 1.1px;
+			}
+			h6{
+				font-weight:900;
+				font-size:5.625rem;
+				// color:rgba(211,4,208,1);
+				padding-top:1.2rem;
+				padding-bottom:2.6rem;
+				line-height:1;
+				background: $gradient100;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				text-shadow: 5px 5px 30px rgba(93,56,240,0.4);
+			}
+			.featuresBubble{
+				text-align: center;
+				text-transform:uppercase;
+				margin-bottom:2.1rem;
+				font-size:1.2rem;
+				font-weight:700;
+				letter-spacing: 1.3px;
+				color:#333333;
+			}
+			ul{
+				margin:auto 0 auto 2.25rem;
+				// margin-top: 2.3rem;
+				li{
+
+					color:#777777;
+					margin-bottom:1.3rem;
+					i{
+						top:0;
+						color:#1abc9c;
+					}
+				}
+			}
+			button{
+				margin-top:0.5rem;
+			}
+		}
+		.priceblock__item--color{
+			background:$gradient100;
+			h5, h6, ul li{
+				color:white;
+			}
+			h6{
+				-webkit-text-fill-color:initial;
+			}
+			ul li i{
+				top:0;
+				color:white;
+			}
+			.featuresBubble{
+				color:#c506c2;
+			}
+		}
+	}
+}

@@ -1,0 +1,118 @@
+h1, h2, h4, h5, h6, p, a, ::-webkit-input-placeholder {
+	font-family: 'lato';
+	color:#141414;
+}
+h1{
+	font-weight: 900;
+	margin-top: 104px;
+	margin-bottom: 7px;
+	color: white;
+	font-size: 4.7rem;
+	letter-spacing: -1px;
+	text-align: center;
+	/* font-weight: 900; */
+}
+// Section Titles
+h2{
+	font-size: 2.2rem;
+	line-height: 1;
+	margin-top: 35px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	margin-bottom: 16px;
+}
+// Section Subtitles
+h3{
+	font-family: 'crimson text';
+	font-weight:400;
+	font-size: 1.1rem;
+	color:#6f6f6f;
+}
+
+h4{
+	font-size: 1.3rem;
+	margin:0.2rem 0;
+	text-transform: capitalize;
+	letter-spacing: 0.4px;
+}
+p{
+
+	color:#969595;
+}
+span{
+  font-size: 1rem;
+  font-family: "Lato";
+  color: rgb(150, 149, 149);
+  line-height: 1.5;
+}
+/* */
+
+header{
+	h3{
+		color:white;
+	}
+	nav ul li a{
+		color:white;
+		text-decoration:none;
+	}
+	.textContainer{
+		h3{
+			margin-bottom:42px;
+		}
+	}
+}
+
+.heading i{
+	margin:auto;
+	color:white;
+	font-size:1.3rem;
+}
+.galleryFooter{
+	.wrapper{
+		h1{
+			text-align:left;
+			margin:0;
+			padding:5.38rem 0 5.38rem 0;
+			font-size:2.5rem;
+		}
+
+	}
+}
+
+#about1{
+	.ourTeamH2{
+		text-align:center;
+		margin-top:6.65rem;
+		margin-bottom:4.75rem;
+	}
+}
+::-webkit-input-placeholder {
+	font-family: 'lato';
+	color:#141414;
+
+	font-weight: 400;
+	text-transform:uppercase;
+}
+input::-webkit-input-placeholder:before{
+	content:"*";
+	color:orange;
+}
+li{
+	font-family:'lato';
+	list-style: none;
+}
+footer {
+	h5{
+	color:white;
+	font-size:1.25rem;
+	letter-spacing: 1.5px;
+	}
+	i{
+	color:#a538ff;
+		span{
+			color:#a538ff;
+			font-family:'lato';
+		}
+	}
+}

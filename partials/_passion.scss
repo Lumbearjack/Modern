@@ -1,0 +1,41 @@
+#passion{
+	background: linear-gradient(rgba(111,48,236,0.95), rgba(111,48,236,0.95)), url("assets/insta_06.jpg");
+	background-size:cover;
+	background-position: center 28%;
+	.wrapper{
+	display:flex;
+	margin: 6% auto 0 auto;
+	}
+	.passionIpad{
+		flex-basis:50%;
+		margin:-5.8% auto;
+		height:80%;
+		display:flex;
+		// transform:scale(0.5);
+		img {
+			margin:auto 0;
+			// transform:scale(1.2);
+			box-shadow: 0.5rem 0.75rem 5rem 0px rgba(135, 153, 163, 0.6);
+			border-radius:30px;
+		}
+	}
+	.passionText{
+		flex-basis: 50%;
+		margin:auto 0 auto 1.5rem;
+		h2{
+			font-size:3rem;
+			line-height:1.2;
+			margin:0;
+		}
+		h2.lineOne{
+			color:#b9c8e5;
+		}
+		h2.lineTwo{
+			color:#fff;
+		}
+		p{
+			color:#b9c8e5;
+			line-height:1.5;
+		}
+	}
+}

@@ -1,0 +1,71 @@
+// General Button Styles //
+button:hover, button:active, button:focus{
+	outline:none;
+}
+button{
+	margin:0;
+	border:none;
+	border-radius:500px;
+	height:46px;
+	line-height:0;
+	font-family: 'lato';
+	font-size:1rem;
+	padding:1rem 1.5rem;
+	transition: all 0.5s ease-out;
+}
+button > *{
+	padding:0;
+	margin:0;
+	vertical-align: middle;
+}
+// Pink Button //
+button.button--pink{
+	color:white;
+	min-width:160px;
+	background-color: #c506c2;
+	box-shadow: 4px 8px 24px rgba(0,0,0,0.3)
+}
+button.button--pink:hover{
+	color:#c506c2;;
+	background-color: white;
+	box-shadow: 4px 8px 24px rgba(0,0,0,0.6);
+}
+// White Button//
+button.button--hollow{
+	border:1px solid #e9e9e9;
+	color:#414141;
+	background-color: white;
+	text-transform: uppercase;
+}
+.button--hollow:hover{
+	color:white;
+	background-color: #c506c2;
+	border:1px solid #c506c2;
+}
+
+// Specific Styling //
+.buttonList{
+	padding-top:1.5rem;
+	text-align:center;
+	button{
+		margin-right:1rem;
+		margin-bottom:1rem;
+	}
+	button:last-child{
+		margin-right:0rem;
+	}
+}
+.featuresBubble{
+	box-sizing:border-box;
+	width:100%;
+	margin:0;
+	border:none;
+	border-radius:500px;
+	height:46px;
+	line-height:0;
+	font-family: 'lato';
+	font-size:1rem;
+	padding:2rem 1.5rem;
+	transition: all 0.5s ease-out;
+	background:#f1f1f1;
+}

@@ -1,0 +1,64 @@
+header{
+	position:relative;
+	background: $gradient90, url(assets/hero.jpg);
+	background-size: cover;
+
+	width:100%;
+	h3{
+		color:white;
+	}
+	nav{
+		padding:2rem 0;
+		display:flex;
+		justify-content:space-between;
+		ul{
+			display:flex;
+			li{
+				margin-right:2rem;
+				a{
+					color:white;
+					text-decoration:none;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			li:last-child{
+				margin:0;
+			}
+		}
+	}
+	.textContainer{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		h1{
+
+		}
+		h3{
+			margin-bottom:42px;
+		}
+
+	}
+}
+.mockup{
+	z-index:1;
+	width:100%;
+	transform:translateY(-35.5%);
+	position: absolute;
+}
+
+.heading{
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	padding:0 0 2rem 0;
+	.faWrapper{
+		display:flex;
+		background:$gradient100;
+		border-radius:50%;
+		height:58px;
+		width:58px;
+		box-shadow: 0.5rem 0.75rem 3rem 0px rgba(93, 56, 240, 0.2);
+	}
+}

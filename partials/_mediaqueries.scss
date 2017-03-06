@@ -1,0 +1,243 @@
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+#services{
+	ul{
+		li{
+			flex-basis: calc(100% / 2);
+			}
+		}
+	}
+	#workProcess > div > div.processBlock > i{
+		display:none;
+	}
+	//
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	header nav{
+		flex-direction:column;
+		justify-content: center;
+		a{
+			margin:0 auto 1.5rem auto;
+			// transform:scale(1);
+		}
+		ul{
+			justify-content: center;
+		}
+	}
+	#about1 .ourTeam{
+		flex-wrap:wrap;
+		justify-content: center;
+		.ourTeam__item{
+			flex-basis:100%;
+			margin-top:2rem;
+		}
+	}
+
+	#services > div > ul > li{
+		flex-direction:column;
+		& *{
+			margin:auto;
+			text-align:center;
+		}
+		.servicesBlock__item__text h4{
+			margin:1rem 0;
+		}
+		.servicesBlock__item__text p{
+			margin:auto;
+			text-align:center;
+		}
+	}
+
+	#gallery > div.gallery > .gallery__item{
+		width:50%;
+	}
+	#about1 > div > div.whoWeAre{
+		position: relative;
+		justify-content: center;
+	}
+	#about1 > div > div.whoWeAre > div.contactSquare{
+		position:absolute;
+		z-index:0;
+		flex-basis:100%;
+		opacity:0.3;
+	}
+	#about1 > div > div.whoWeAre > div.contactInfo{
+		margin:auto;
+		padding:0 3rem;
+		text-align: center;
+		flex-basis:100%;
+		z-index:1;
+		h4,p, li{
+			background:rgba(255,255,255,.8);
+			padding:0.5rem;
+		}
+	}
+	#about1 > div > div.whoWeAre > div.contactInfo > ul{
+			padding-left:2rem;
+	}
+	#clientSay > div > div.cardRotary > div.cardRotary__item.a{
+		transform:translatex(-15%) scale(0.75);
+	}
+	#clientSay > div > div.cardRotary > div.cardRotary__item.c{
+		transform:translatex(15%) scale(0.75);
+	}
+	#workProcess > div > div.processBlock{ 
+		justify-content: center;
+		.processBlock__item{
+			justify-content: center;
+			img{
+				transform:scale(0.75)
+			}
+		}
+	}
+	#passion > div > div.passionIpad{
+		display:none;
+	}
+	#passion > div > div.passionText{
+		flex-basis:100%;
+		margin:7rem 2rem;
+	}
+	#purchase > div > div.priceBlock{
+		flex-wrap:wrap;
+		justify-content: center;
+		.priceBlock__item{
+			margin:2rem 0.5rem 0 0.5rem;
+			flex-basis:100%;
+		}
+	}
+	#percents{
+		padding-top:7rem;
+		padding-bottom:7rem;
+	}
+	#percents > .wrapper{
+		flex-direction:column;
+		div.percents__item{
+			margin:auto;
+			width: calc(142px * 1.6);
+			height: calc(149px * 1.6);
+		}
+	}
+	#workProcess > .wrapper > div.processBlock{
+		flex-direction:column;
+	}
+	footer .wrapper .footerColumns{
+		flex-wrap:wrap;
+		.footerColumns__item{
+		flex-basis:50%;
+		}
+	}
+//	
+}
+
+
+@media (max-width: 572px) {
+	#about1 .ourTeam{
+		flex-wrap:wrap;
+		justify-content: center;
+		.ourTeam__item{
+			margin-top:2rem;
+			flex-basis:100%;
+		}
+		.ourTeam__item:first-child{
+			margin-top:0;
+			margin-right:0;
+		}
+
+	}
+	#purchase > div > div.priceBlock{
+		flex-wrap:wrap;
+		justify-content: center;
+		.priceBlock__item{
+			margin:2rem 0;
+			flex-basis:100%;
+		}
+	}
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	header nav{
+		a{
+			margin:0 auto 1.5rem auto;
+			// transform:scale(1);
+		}
+		ul{
+			flex-wrap:wrap;
+			li{
+				margin-bottom:1rem;
+			}
+			li:last-child:after{
+				content:"Search";
+				color:white;
+				font-family:'lato';
+				margin-left:0.5rem;
+			}
+		}
+	}
+
+	#services > div > ul{
+		padding-bottom:4rem;
+		li{
+		flex-basis:100%;
+		margin-bottom:3rem;
+		flex-direction:row;
+		& *{
+			margin:auto;
+			text-align:left;
+		}
+		.servicesBlock__item__text h4{
+			margin:1rem 0;
+		}
+		.servicesBlock__item__text p{
+			margin:auto;
+			text-align:left;
+		}
+	}}
+
+	#gallery > div.gallery > .gallery__item{
+		width:100%;
+	}
+	#gallery > div.galleryFooter > .wrapper{
+		flex-direction:column;
+		padding-bottom:3rem;
+		h1{
+			padding-top:4rem;
+			padding-bottom:3rem;
+		}
+		button{
+		}
+	}
+	#clientSay > div > div.cardRotary > div.cardRotary__item.a{
+		display:none;
+	}
+	#clientSay > div > div.cardRotary > div.cardRotary__item.c{
+		display:none;
+	}
+	#touch .wrapper .formWrapper{
+		flex-direction:column;
+		input{
+			width:100%;
+			margin-bottom:2rem;
+			&:last-child{
+				margin-bottom:0;
+			}
+		}
+	}
+	footer .wrapper .footerColumns{
+		flex-wrap:wrap;
+		justify-content: center;
+		text-align: center;
+		margin:auto;
+
+		.footerColumns__item,.footerColumns__item.a,.footerColumns__item.b,.footerColumns__item.c,.footerColumns__item.d{
+		flex-basis:100%;
+		}
+	}
+	footer .footerColumns .footerColumns__item.b ul li {
+	    width: 100%;
+	}
+	//
+}

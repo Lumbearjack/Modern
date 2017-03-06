@@ -1,0 +1,66 @@
+#clientSay{
+	padding:7rem 0 10rem 0;
+	.cardRotary{
+		position:relative;
+		box-sizing:border-box;
+		display:flex;
+		margin:3.25rem auto 0 auto;
+		max-width:514px;
+
+		.cardRotary__item{
+			margin:auto;
+			position: relative;
+			display:flex;
+			flex-direction:column;
+			background:white;
+			border-radius: 5px;
+			box-shadow: 3px 0.25rem 50px 0px rgba(135, 153, 163, 0.35);
+			.quotationImg{
+				transform:translateY(-50%);
+				margin:auto;
+			}
+			p.blurb{
+				margin: auto;
+				text-align: center;
+				padding: .9rem 4.1875rem;
+				line-height: 1.5;
+			}
+			h5{
+				margin: 1.4rem auto .6rem auto;
+				font-size: 1.5rem;
+				letter-spacing: .5px;
+			}
+			p.position{
+				margin:auto;
+				padding-bottom:4.1rem;
+			}
+			.headshotOutline{
+				margin:-47.5px auto;
+				box-sizing:border-box;
+				padding:0.5rem;
+				display:flex;
+				width:95px;
+				height: 95px;
+				background:$gradient100;
+				border-radius:50%;
+				img{
+					object-fit:cover;
+					border-radius:50%;
+				}
+			}
+		}
+		.cardRotary__item.a{
+			z-index:0;
+			position:absolute;
+			transform:translatex(-30%) scale(0.75);
+		}
+		.cardRotary__item.b{
+			z-index:1;
+		}
+		.cardRotary__item.c{
+			z-index:0;
+			position:absolute;
+			transform:translatex(30%) scale(0.75);
+		}
+	}
+}

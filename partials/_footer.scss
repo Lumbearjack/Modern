@@ -1,0 +1,122 @@
+footer{
+	background:#33303e;
+	display:flex;
+	flex-direction:column;
+	.footerColumns{
+		margin-top:4.5rem;
+		display:flex;
+		justify-content: space-between;
+		.footerColumns__item{
+			box-sizing:border-box;
+			padding-right:2rem;
+			li, p, a{
+				color:#807d8c;
+				text-decoration: none;
+
+			}
+			a:hover{
+				color:#c506c2;
+			}
+		}
+		.footerColumns__item.a{
+			width:37%;
+		}
+		.footerColumns__item.b{
+			width:17%;
+			ul{
+				display:flex;
+				flex-direction:column;
+				justify-content: space-between;
+				li{
+					width:30%;
+					margin-bottom:1rem;
+				}
+			}
+		}
+		.footerColumns__item.c{
+			width:25%;
+		}
+		.footerColumns__item.d{
+			width:21%;
+			ul{
+				display:flex;
+				justify-content: space-between;
+				flex-wrap:wrap;
+				li{
+					margin-bottom:1rem;
+					width: 70px;
+					height:70px;
+					> div{
+						background-size:cover;
+					}
+					&:hover{
+						cursor:pointer;
+					}
+					&:nth-child(1){
+						background: url('assets/insta_small1.jpg');					
+						&:hover{
+							background: $gradient90, url('assets/insta_small1.jpg');
+						}
+					}
+					&:nth-child(2){
+						background: url('assets/insta_small2.jpg');
+						&:hover{
+							background: $gradient90, url('assets/insta_small1.jpg');
+						}
+					}
+					&:nth-child(3){
+						background: url('assets/insta_small3.jpg');
+						&:hover{
+							background: $gradient90, url('assets/insta_small1.jpg');
+						}
+					}
+					&:nth-child(4){
+						background: url('assets/insta_small4.jpg');
+						&:hover{
+							background: $gradient90, url('assets/insta_small1.jpg');
+						}
+					}
+					&:nth-child(5){
+						background: url('assets/insta_small5.jpg');
+						&:hover{
+							background: $gradient90, url('assets/insta_small1.jpg');
+						}
+					}
+					&:nth-child(6){
+						background: url('assets/insta_small6.jpg');
+						&:hover{
+							background: $gradient90, url('assets/insta_small1.jpg');
+						}
+					}
+				}
+			}
+		}
+
+	}
+	.footerRow{
+		display:flex;
+		margin:auto;
+		justify-content: center;
+		margin:7.3rem 0 5rem 0;
+		div{
+			display:flex;
+			height:50px;
+			width:50px;
+			background:#807d8c;
+			border-radius:50%;
+			margin:0.25rem;
+			i{
+				color:black;
+				margin:auto;
+			}
+			&:hover{
+				background:$gradient100;
+				cursor:pointer;
+				i{
+					color:white;
+				}
+			}
+
+		}
+	}
+}
