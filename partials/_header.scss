@@ -2,8 +2,9 @@ header{
 	position:relative;
 	background: $gradient90, url(assets/hero.jpg);
 	background-size: cover;
-
 	width:100%;
+	min-height:50rem;
+	max-height:81vh;
 	h3{
 		color:white;
 	}

@@ -290,7 +290,9 @@ header {
   position: relative;
   background: linear-gradient(-45deg, rgba(47, 76, 253, 0.9), rgba(211, 4, 208, 0.9)), url(assets/hero.jpg);
   background-size: cover;
-  width: 100%; }
+  width: 100%;
+  min-height: 50rem;
+  max-height: 81vh; }
   header h3 {
     color: white; }
   header nav {
